@@ -71,7 +71,7 @@ business_insights = [
     "Customer satisfaction improved by 10%.",
     "Market trends show a growing demand for eco-friendly products."
 ]
-while True:
-    for insight in business_insights:
-        placeholder.write(insight)
-        time.sleep(2)
+
+for insight in business_insights:
+    placeholder.write(insight)
+    time.sleep(2)
