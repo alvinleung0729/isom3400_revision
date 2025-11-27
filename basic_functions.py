@@ -10,7 +10,7 @@ st.write("**Please** provide your details *below:*")
 age = st.number_input("Enter your age:",
                       min_value=0,
                       max_value=120,
-                      value=25
+                      value=25,
                       step=0.1)
 color = st.selectbox("Choose your favorite color:",
                      ["Red", "Blue", "Green"])
