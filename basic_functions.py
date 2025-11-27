@@ -11,7 +11,7 @@ age = st.number_input("Enter your age:",
                       min_value=0,
                       max_value=120,
                       value=25,
-                      step=2)
+                      step=1)
 color = st.selectbox("Choose your favorite color:",
                      ["Red", "Blue", "Green"])
 
