@@ -27,7 +27,7 @@ st.dataframe(df)  # Interactive table with sorting and resizing
 
 # Line Chart - Sales Over Time
 st.markdown("### Sales Over Time")
-st.line_chart(sales_data)
+st.line_chart(df[['Product', 'Sales']].set_index('Product'))
 
 # Area Chart - Cumulative Sales
 st.markdown("### Cumulative Sales")
