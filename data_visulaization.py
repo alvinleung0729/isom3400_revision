@@ -35,7 +35,7 @@ st.area_chart(sales_data)
 
 # Bar Chart - Sales by Product
 st.markdown("### Sales by Product")
-st.bar_chart(df)
+st.bar_chart(sales_data)
 
 # Scatter Chart - Customer Engagement by Product
 st.markdown("### Customer Engagement by Product")
