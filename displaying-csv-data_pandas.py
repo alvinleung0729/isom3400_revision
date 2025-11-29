@@ -11,5 +11,5 @@ file_path = os.path.join(current_directory, 'winequality-red.csv')
 df = pd.read_csv(file_path, delimiter=';')
 
 # Display the DataFrame in an interactive table
-st.write("Wine Quality Data")
+st.write("# Wine Quality Data")
 st.dataframe(df)
