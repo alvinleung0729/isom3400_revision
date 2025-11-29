@@ -22,7 +22,7 @@ df = pd.DataFrame({
 # Step 5: Visualize Sales Data
 
 # Display DataFrame using st.dataframe
-st.markdown("### Product Sales and Customer Data")
+st.markdown("## Product Sales and Customer Data")
 st.dataframe(df)  # Interactive table with sorting and resizing
 
 # Line Chart - Sales Over Time
