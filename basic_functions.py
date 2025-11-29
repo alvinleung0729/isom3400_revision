@@ -18,4 +18,4 @@ color = st.selectbox("Choose your favorite color:",
                       index=1)
 
 if st.button("Submit"):
-    st.markdown(f"**Thank you!** Age: {age}, Favorite Color: {color}")
+    st.success(f"##Thank you! Age: {age}, Favorite Color: {color}")
