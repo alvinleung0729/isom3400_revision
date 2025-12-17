@@ -44,6 +44,11 @@ with tab1:
     }
     for quarter, revenue in sales_data.items():
         st.write(f"{quarter}: {revenue}")
+
+df = pd.DataFrame(sales_data)
+
+st.bar_chart(df)
+
 with tab2:
     st.write("Content for Customer Insights")
     customer_feedback = [
