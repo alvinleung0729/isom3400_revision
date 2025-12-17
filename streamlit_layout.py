@@ -27,7 +27,7 @@ df = pd.DataFrame({
 })
 
 st.markdown("Visualize quarterly revenue")
-st.bar_chart(df[["Quarter", "Revenue ($M)"]].set_index("Quarter")
+st.bar_chart(df[["Quarter", "Revenue ($M)"]].set_index("Quarter"))
 
 if st.button("Click here for motivation!")
     st.success("Keep pushing for growth!")
