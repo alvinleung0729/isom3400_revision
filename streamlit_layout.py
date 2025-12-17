@@ -50,9 +50,9 @@ with tab3:
     for trend, status in market_trends.items():
         st.write(f"{trend}: {status}")
 
-with st.expander("More Information"):
-    st.write("Additional details on data collection methods.")
-    st.write("Data was collected through surveys and sales reports.")
+    with st.expander("More Information"):
+        st.write("Additional details on data collection methods.")
+        st.write("Data was collected through surveys and sales reports.")
 
 # Dynamic Containers
 placeholder = st.empty()
