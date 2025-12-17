@@ -29,7 +29,7 @@ with st.form ("user_form"):
   submitted = st.form_submit_button("Submit")
 
 if submitted:
-  st.write(f"Hello {name}, you are {age} years old.")
+  st.write(f"Hello {name2}, you are {age2} years old.")
 
 if st.button("Submit"):
     st.success(f"Thank you! Age: {age}, Favorite Color: {color}, Name: {name}")
