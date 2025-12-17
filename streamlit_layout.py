@@ -20,17 +20,6 @@ with col3:
     st.header("Q3 2024")
     st.write("Revenue: $1.3M")
     
-st.markdown("### Quarterly Revenue Visualization")
-df = pd.DataFrame({
-    "Quarter": ["Q1 2024", "Q2 2024", "Q3 2024"],
-    "Revenue ($M)": [1.2, 1.5, 1.3]
-})
-
-st.markdown("Visualize quarterly revenue")
-st.bar_chart(df[["Quarter", "Revenue ($M)"]].set_index("Quarter"))
-
-if st.button("Click here for motivation!"):
-    st.success("Keep pushing for growth!")
 
 # Tabs Layout
 tab1, tab2, tab3 = st.tabs(["Sales Data", "Customer Insights", "Market Trends"])
@@ -45,9 +34,17 @@ with tab1:
     for quarter, revenue in sales_data.items():
         st.write(f"{quarter}: {revenue}")
 
-df = pd.DataFrame(sales_data)
+df = pd.DataFrame({
+    "Quarter": ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"],
+    "Revenue ($M)": [1.2, 1.5, 1.3, 1.6]
+})
 
-st.bar_chart(df)
+st.markdown("Visualize quarterly revenue")
+st.bar_chart(df[["Quarter", "Revenue ($M)"]].set_index("Quarter"))
+
+if st.button("Click here for motivation!"):
+    st.success("Keep pushing for growth!")
+
 
 with tab2:
     st.write("Content for Customer Insights")
