@@ -19,6 +19,17 @@ color = st.selectbox("Choose your favorite color:",
 
 name = st.text_input("Enter your name:")
 
-  
+with st.form ("user_form"):
+  name2 = st.text_input("Enter your name")
+  age2 = st.number_input("Enter your age",
+                         min_value = 0,
+                         max_value = 100,
+                         value = 25,
+                         step = 1)
+  submitted = st.form_submit_button("Submit")
+
+if submitted:
+  st.write(f"Hello {name}, you are {age} years old.")
+
 if st.button("Submit"):
     st.success(f"Thank you! Age: {age}, Favorite Color: {color}, Name: {name}")
