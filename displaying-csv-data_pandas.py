@@ -8,7 +8,7 @@ current_directory = os.getcwd()
 file_path = os.path.join(current_directory, 'winequality-red.csv')
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv(file_path, delimiter=';')
+df = pd.read_csv(file_path)
 
 # Display the DataFrame in an interactive table
 st.write("# Wine Quality Data")
