@@ -1,5 +1,6 @@
 import streamlit as st
 import time
+import pandas as pd
 
 # Title
 st.title("Business Dashboard with Streamlit Layouts")
@@ -18,6 +19,18 @@ with col2:
 with col3:
     st.header("Q3 2024")
     st.write("Revenue: $1.3M")
+    
+st.markdown("### Quarterly Revenue Visualization")
+df = pd.DataFrame({
+    "Quarter": ["Q1 2024", "Q2 2024", "Q3 2024"],
+    "Revenue ($M)": [1.2, 1.5, 1.3]
+})
+
+st.markdown("Visualize quarterly revenue")
+st.bar_chart(df[["Quarter", "Revenue ($M)"]].set_index("Quarter")
+
+if st.button("Click here for motivation!")
+    st.success("Keep pushing for growth!")
 
 # Tabs Layout
 tab1, tab2, tab3 = st.tabs(["Sales Data", "Customer Insights", "Market Trends"])
@@ -89,3 +102,5 @@ business_insights = [
 for insight in business_insights:
     placeholder.write(insight)
     time.sleep(2)
+
+
