@@ -3,7 +3,7 @@
 import streamlit as st
 
 st.title("Streamlit Demo App")
-st.header("User Input Section")
+st.subheader("User Input Section")
 
 st.write("**Please** provide your details *below:*")
 
