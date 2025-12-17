@@ -62,6 +62,12 @@ with st.expander("More Information"):
     with col3:
         st.write("Bye")
 
+    tab1, tab2 = st.tabs(["Hi","Hello"])
+    with tab1:
+        st.write("67")
+    with tab2:
+        st.write("Never gonna give you up.")
+
 # Dynamic Containers
 placeholder = st.empty()
 
